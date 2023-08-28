@@ -2258,8 +2258,7 @@ CORSプラグインにより作成されたOPTIONSメソッドは、CORSプラ�
       "stageName": "alpha",
       "stageDescription": "alpha環境ステージ",
       "stageUrl": "kr1-{apigwServiceId}-alpha.api.nhncloudservice.com",
-      "stageCustomUrl": null,
-      "stageAliasDomainList": [],
+      "stageCustomDomainList": [],
       "backendEndpointUrl": "https://backend.com",
       "resourceUpdatedAt": "2021-10-20T06:43:26.000Z",
       "createdAt": "2021-10-20T06:43:26.000Z",
@@ -2280,10 +2279,9 @@ CORSプラグインにより作成されたOPTIONSメソッドは、CORSプラ�
 |stageList[0].apigwServiceId   |String  |API GatewayサービスID  |
 |stageList[0].stageId          |String  |ステージID             |
 |stageList[0].stageName        |String  |ステージ名           |
-|stageList[0].stageUrl         |String  |ステージURL            |
-|stageList[0].stageCustomUrl   |String  |ステージユーザー定義URL (Deprecated：stageAliasDomainListに変更) |
-|stageList[0].stageAliasDomainList   |List  |ステージドメインエイリアスリスト領域 |
-|stageList[0].stageAliasDomainList[0].aliasDomain   |String  |ドメインエイリアス |
+|stageList[0].stageCustomDomainList   |List  |ステージユーザー指定ドメインリスト領域 |
+|stageList[0].stageCustomDomainList[0].customDomain   |String  |ユーザー指定ドメイン |
+|stageList[0].stageCustomDomainList[0].createdAt   |DateTime  |ユーザー指定ドメイン接続日時  |
 |stageList[0].stageAliasDomainList[0].createdAt   |DateTime  |ドメインエイリアス接続日時  |
 |stageList[0].stageDescription |String  |ステージの説明           |
 |stageList[0].backendEndpointUrl|String  |バックエンドエンドポイントURL       |
@@ -2387,8 +2385,7 @@ CORSプラグインにより作成されたOPTIONSメソッドは、CORSプラ�
     "stageName": "alpha",
     "stageDescription": "alpha環境ステージ",
     "stageUrl": "kr1-{apigwServiceId}-alpha.api.nhncloudservice.com",
-    "stageCustomUrl": null,
-    "stageAliasDomainList": [],
+    "stageCustomDomainList": [],
     "backendEndpointUrl": "https://backend.com",
     "resourceUpdatedAt": "2021-10-22T02:22:11.182Z",
     "createddAt": "2021-10-22T02:22:11.182Z",
@@ -2405,10 +2402,9 @@ CORSプラグインにより作成されたOPTIONSメソッドは、CORSプラ�
 |stage.stageId          |String  |ステージID             |
 |stage.stageName        |String  |ステージ名           |
 |stage.stageUrl         |String  |ステージURL            |
-|stage.stageCustomUrl   |String  |ステージユーザー定義URL (Deprecated：stageAliasDomainListに変更) |
-|stage.stageAliasDomainList   |List  |ステージドメインエイリアスリスト領域 |
-|stage.stageAliasDomainList[0].aliasDomain   |String  |ドメインエイリアス |
-|stage.stageAliasDomainList[0].createdAt   |DateTime  |ドメインエイリアス接続日時  |
+|stageCustomDomainList   |List  |ステージユーザー指定ドメインリスト領域 |
+|stageCustomDomainList[0].customDomain   |String  |ユーザー指定ドメイン |
+|stageCustomDomainList[0].createdAt   |DateTime  |ユーザー指定ドメイン接続日時  |
 |stage.stageDescription |String  |ステージの説明           |
 |stage.backendEndpointUrl      |String  |バックエンドエンドポイントURL       |
 |stage.resourceUpdatedAt|DateTime|最近ステージにリソースをインポートした日時 |
@@ -2467,8 +2463,7 @@ CORSプラグインにより作成されたOPTIONSメソッドは、CORSプラ�
     "stageName": "alpha",
     "stageDescription": "alphaステージv2",
     "stageUrl": "kr1-{apigwServiceId}-alpha.api.nhncloudservice.com",
-    "stageCustomUrl": null,
-    "stageAliasDomainList": [],
+    "stageCustomDomainList": [],
     "backendEndpointUrl": "https://v2.backend.com",
     "resourceUpdatedAt": "2021-10-22T02:22:11.182Z",
     "createdAt": "2021-10-22T02:22:11.182Z",
@@ -2485,10 +2480,9 @@ CORSプラグインにより作成されたOPTIONSメソッドは、CORSプラ�
 |stage.stageId          |String  |ステージID             |
 |stage.stageName        |String  |ステージ名           |
 |stage.stageUrl         |String  |ステージURL            |
-|stage.stageCustomUrl   |String  |ステージユーザー定義URL (Deprecated：stageAliasDomainListに変更)  |
-|stage.stageAliasDomainList   |List  |ステージドメインエイリアスリスト領域 |
-|stage.stageAliasDomainList[0].aliasDomain   |String  |ドメインエイリアス |
-|stage.stageAliasDomainList[0].createdAt   |DateTime  |ドメインエイリアス接続日時  |
+|stage.stageCustomDomainList   |List  |ステージユーザー指定ドメインリスト領域 |
+|stage.stageCustomDomainList[0].customDomain   |String  |ユーザー指定ドメイン |
+|stage.stageCustomDomainList[0].createdAt   |DateTime  |ユーザー指定ドメイン接続日時  |
 |stage.stageDescription |String  |ステージの説明           |
 |stage.backendEndpointUrl      |String  |バックエンドエンドポイントURL       |
 |stage.resourceUpdatedAt|DateTime|最近ステージにリソースをインポートした日時 |
@@ -4502,8 +4496,7 @@ CORSプラグインにより作成されたOPTIONSメソッドは、CORSプラ�
       "stageId": "{stageId}",
       "stageName": "custom",
       "stageUrl": "kr1-example-custom.api.nhncloudservice.com",
-      "stageCustomUrl": null,
-      "stageAliasDomainList": [],
+      "stageCustomDomainList": [],
       "usagePlanId": "{usagePlanId}",
       "usagePlanName": "Basic"
     }
@@ -4525,10 +4518,9 @@ CORSプラグインにより作成されたOPTIONSメソッドは、CORSプラ�
 | usagePlanStageList[0].stageId        | String  | ステージID                |
 | usagePlanStageList[0].stageName      | String  | ステージ名              |
 | usagePlanStageList[0].stageUrl       | String  | ステージURL               |
-| usagePlanStageList[0].stageCustomUrl | String  | ステージユーザー定義URL (Deprecated：stageAliasDomainListに変更) |
-| usagePlanStageList[0].stageAliasDomainList   |List  |ステージドメインエイリアスリスト領域 |
-| usagePlanStageList[0].stageAliasDomainList[0].aliasDomain   |String  |ドメインエイリアス |
-| usagePlanStageList[0].stageAliasDomainList[0].createdAt   |DateTime  |ドメインエイリアス接続日時  |
+| usagePlanStageList[0].stageCustomDomainList   |List  |ステージユーザー指定ドメインリスト領域 |
+| usagePlanStageList[0].stageCustomDomainList[0].customDomain   |String  |ユーザー指定ドメイン |
+| usagePlanStageList[0].stageCustomDomainList[0].createdAt   |DateTime  |ユーザー指定ドメイン接続日時  |
 | usagePlanStageList[0].usagePlanId    | String  | 使用量プランID              |
 | usagePlanStageList[0].usagePlanName  | String  | 使用量プランの名前            |
 
@@ -4718,8 +4710,7 @@ CORSプラグインにより作成されたOPTIONSメソッドは、CORSプラ�
             "stageId": "{stageId}",
             "stageName": null,
             "stageUrl": "kr1-example.api.nhncloudservice.com",
-            "stageCustomUrl": null,
-            "stageAliasDomainList": [],
+            "stageCustomDomainList": [],
             "usagePlanId": "{usagePlanId}",
             "usagePlanName": "Basic",
             "usagePlanDescription": "It's for Basic User",
@@ -4746,10 +4737,9 @@ CORSプラグインにより作成されたOPTIONSメソッドは、CORSプラ�
 | subscribedStageAndUsagePlanList[0].stageId                   | String  | ステージID                                           |
 | subscribedStageAndUsagePlanList[0].stageName                 | String  | ステージ名                                         |
 | subscribedStageAndUsagePlanList[0].stageUrl                  | String  | ステージURL                                          |
-| subscribedStageAndUsagePlanList[0].stageCustomUrl            | String  | ステージユーザー定義URL (Deprecated：stageAliasDomainListに変更) |
-| subscribedStageAndUsagePlanList[0].stageAliasDomainList   |List  |ステージドメインエイリアスリスト領域 |
-| subscribedStageAndUsagePlanList[0].stageAliasDomainList[0].aliasDomain   |String  |ドメインエイリアス |
-| subscribedStageAndUsagePlanList[0].stageAliasDomainList[0].createdAt   |DateTime  |ドメインエイリアス接続日時  |
+| subscribedStageAndUsagePlanList[0].stageCustomDomainList   |List  |ステージユーザー指定ドメインリスト領域 |
+| subscribedStageAndUsagePlanList[0].stageCustomDomainList[0].customDomain   |String  |ユーザー指定ドメイン |
+| subscribedStageAndUsagePlanList[0].stageCustomDomainList[0].createdAt   |DateTime  |ユーザー指定ドメイン接続日時  |
 | subscribedStageAndUsagePlanList[0].usagePlanId               | String  | 使用量プランID                                         |
 | subscribedStageAndUsagePlanList[0].usagePlanName             | String  | 使用量プランの名前                                       |
 | subscribedStageAndUsagePlanList[0].usagePlanDescription      | String  | 使用量プランの説明                                       |
@@ -5162,8 +5152,7 @@ CORSプラグインにより作成されたOPTIONSメソッドは、CORSプラ�
     "kr1-{apigwServiceId}-member.api.nhncloudservice.com": {
       "stageName": "member",
       "stageUrl": "kr1-{apigwServiceId1}-member.api.nhncloudservice.com",
-      "stageCustomUrl": null,
-      "stageAliasDomainList": [],
+      "stageCustomDomainList": [],
       "apiKeyMetricsTimeSeries": {
         "callCount": [
           {
@@ -5180,7 +5169,7 @@ CORSプラグインにより作成されたOPTIONSメソッドは、CORSプラ�
     "kr1-{apigwServiceId}-billing.api.nhncloudservice.com": {
       "stageName": "billing",
       "stageUrl": "kr1-{apigwServiceId}-billing.api.nhncloudservice.com",
-      "stageCustomUrl": null,
+      "stageCustomDomainList": [],
       "apiKeyMetricsTimeSeries": {
         "callCount": [
           {
@@ -5206,10 +5195,9 @@ CORSプラグインにより作成されたOPTIONSメソッドは、CORSプラ�
 |data.{requestApigwEndpoint}          |Object  | API呼び出しエンドポイント別統計領域              |
 |data.{requestApigwEndpoint}.stageName                    |String    | ステージ名          |
 |data.{requestApigwEndpoint}.stageUrl                     |String    | ステージURL |
-|data.{requestApigwEndpoint}.stageCustomUrl               |String    | ステージユーザー定義URL (Deprecated：stageAliasDomainListに変更)|
-|data.{requestApigwEndpoint}.stageAliasDomainList   |List  |ステージドメインエイリアスリスト領域 |
-|data.{requestApigwEndpoint}.stageAliasDomainList[0].aliasDomain   |String  |ドメインエイリアス |
-|data.{requestApigwEndpoint}.stageAliasDomainList[0].createdAt   |DateTime  |ドメインエイリアス接続日時  |
+|data.{requestApigwEndpoint}.stageCustomDomainList   |List  |ステージユーザー指定ドメインリスト領域 |
+|data.{requestApigwEndpoint}.stageCustomDomainList[0].customDomain   |String  |ユーザー指定ドメイン |
+|data.{requestApigwEndpoint}.stageCustomDomainList[0].createdAt   |DateTime  |ユーザー指定ドメイン接続日時  |
 |data.{requestApigwEndpoint}.apiKeyMetricsTimeSeries      |Object    | 集計時間単位別API Key統計領域|
 |data.{requestApigwEndpoint}.apiKeyMetricsTimeSeries.callCount               |List    | API呼び出し数統計リスト領域 |
 |data.{requestApigwEndpoint}.apiKeyMetricsTimeSeries.callCount[0]               |Object    | API呼び出し数統計領域 |
@@ -5219,3 +5207,89 @@ CORSプラグインにより作成されたOPTIONSメソッドは、CORSプラ�
 |timeUnit          |Enum    | [統計データ時間単位Enumコード](./enum-code/#_7)ONE_DAYS参考 |
 
 * 日単位の統計データは各日の00:00:00の時間データで集計されます。
+
+### Top 10サービス照会
+- 全体API呼び出し数、失敗API呼び出し数、平均レスポンス時間を基準に上位10個のAPI Gatewayサービスリストと累積統計を照会できます。
+
+
+#### リクエスト
+
+[URI]
+
+| メソッド | URI |
+| --- | --- |
+| GET | /v1.0/appkeys/{appKey}/metrics/top-services |
+
+
+[QueryString Parameter]
+
+| 名前 | タイプ | 必須かどうか | デフォルト値 | 有効範囲 | 説明 |
+| --- | --- | --- | --- | --- | --- |
+| lastDays | Integer | 任意 | 7 | 1～30 | 照会期間の日数(当日を含む)  |
+| order | Enum | 任意 | CALL_COUNT | CALL_COUNT,FAIL_CALL_COUNT,AVG_RESPONSE_TIME | [統計 > Top10サービスソート基準](./enum-code/#top10)|
+
+
+#### レスポンス
+
+[Response]
+
+```json
+{
+        "header": {
+            "isSuccessful": true,
+            "resultCode": 0,
+            "resultMessage": "SUCCESS"
+        },
+        "data": [
+            {
+                "rank": 1,
+                "apigwServiceId": "{apigwServiceId1}",
+                "apigwServiceName": "apigwservice-1",
+                "status2xxCount": 100,
+                "status3xxCount": 0,
+                "status4xxCount": 0,
+                "status5xxCount": 0,
+                "statusEtcCount": 0,
+                "callCount": 100,
+                "failCallCount": 0,
+                "successCallCount": 100,
+                "avgResponseTimeMs": 6,
+                "networkOutboundByte": 31202
+            },
+            {
+                "rank": 2,
+                "apigwServiceId": "apigwServiceId2",
+                "apigwServiceName": "apigwservice-2",
+                "status2xxCount": 50,
+                "status3xxCount": 0,
+                "status4xxCount": 0,
+                "status5xxCount": 0,
+                "statusEtcCount": 0,
+                "callCount": 50,
+                "failCallCount": 0,
+                "successCallCount": 50,
+                "avgResponseTimeMs": 8,
+                "networkOutboundByte": 19220
+            }
+            ... 
+        ],
+        "metricsLatestUpdatedAt": "2023-07-19T02:21:08.000Z"
+    }
+```
+
+| フィールド | タイプ | 説明 |
+| --- | --- | --- |
+|data | Object | Top 10サービス統計データ領域 |
+|data[0].rank | Integer  | 順位番号 |
+|data[0].apigwServiceId | String | API GatewayサービスID |
+|data[0].apigwServiceName | String | API Gatewayサービス名 |
+|data[0].successCount | Long | API成功数(レスポンスHTTPステータスコードが2xx, 3xxの場合) |
+|data[0].failCount | Long | API失敗数(レスポンスHTTPステータスコードが4xx、5xxの場合) |
+|data[0].status2xxCount | Long | レスポンスHTTPステータスコードが2xxのAPI呼び出し数 |
+|data[0].status3xxCount | Long | レスポンスHTTPステータスコードが3xxのAPI呼び出し数 |
+|data[0].status4xxCount | Long | レスポンスHTTPステータスコードが4xxのAPI呼び出し数 |
+|data[0].status5xxCount | Long | レスポンスHTTPステータスコードが5xxのAPI呼び出し数 |
+|data[0].statusEtcCount | Long | 2xx、3xx、4xx、5xx以外のレスポンスHTTPステータスコードAPI呼び出し数 |
+|data[0].avgResponseTimeMs | Long | 平均APIレスポンス時間(ms) |
+|data[0].networkOutboundByte | Long | アウトバウンドネットワークバイトの合計(bytes) |
+|metricsLatestUpdatedAt | DateTime | 統計データの最新更新日時 |
