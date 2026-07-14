@@ -10,11 +10,15 @@ This guide describes Public API v1.0 provided by NHN Cloud API Gateway.
 |---------|-----|------------------------------------------------|
 | API domain | Korea (Pangyo) | https://kr1-apigateway.api.nhncloudservice.com |
 | API domain | Korea (Pyeongchon) | https://kr2-apigateway.api.nhncloudservice.com |
+| API domain | Korea (Gwangju) | https://kr3-apigateway.api.nhncloudservice.com |
 
 ### Prerequisites
 
-To use the API, you need an Appkey.
-You can find your Appkey in the **URL & Appkey** menu at the top right of the console.
+An AppKey or a Project Integrated Appkey is required to use the API Gateway API. 
+
+An AppKey is a unique authentication key issued for each individual NHN Cloud service, while a Project Integrated Appkey is a common authentication key that can be shared across multiple services within a single NHN Cloud project. 
+
+For more information on checking and using Appkeys, please refer to the [Appkey](https://docs.nhncloud.com/en/nhncloud/en/public-api/appkey). For more information on creating and using Project Integrated Appkeys, please refer to the [Project Integrated Appkey](https://docs.nhncloud.com/en/nhncloud/en/public-api/project-integrated-appkey).
 
 ### Request Common Information
 
